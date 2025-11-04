@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:tugas_week_6_1123150053/screen/login_screen.dart';
+import 'package:tugas_week_6_1123150053/screen/login_screen.dart';
 
 class MySplashScreen3 extends StatelessWidget {
   const MySplashScreen3({super.key});
@@ -106,13 +106,13 @@ class MySplashScreen3 extends StatelessWidget {
                     ),
                     onPressed: () {
                     // ✅ Pindah ke halaman login dan hapus semua route sebelumnya
-                      // Navigator.pushAndRemoveUntil(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const LoginScreen(),
-                      //   ),
-                      //   (Route<dynamic> route) => false,
-                      // );  
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ),
+                        (Route<dynamic> route) => false,
+                      );  
                     },
                     child: const Text(
                       "Continue",
