@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'screen/splash_screen_1.dart';
+import 'package:tugas_week_6_1123150053/screen/splash_screen_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
       ),
-     // home: const MySplashScreen(), // pastikan nama class cocok
+      home: const MySplashScreen(), // pastikan nama class cocok
       debugShowCheckedModeBanner: false,
     );
   }

@@ -105,9 +105,9 @@ class MySplashScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                      //MaterialPageRoute(builder: (contex) => MySplashScreen2()),
-                      );
+                      // Navigator.push(context,
+                      // MaterialPageRoute(builder: (contex) => MySplashScreen2()),
+                      // );
                     },
                     child: const Text(
                       "Continue",
