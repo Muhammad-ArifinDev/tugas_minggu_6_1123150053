@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_week_6_1123150053/screen/splash_screen_3.dart';
+//import 'package:tugas_week_6_1123150053/screen/login_screen.dart';
 
-class MySplashScreen2 extends StatelessWidget {
-  const MySplashScreen2({super.key});
+class MySplashScreen3 extends StatelessWidget {
+  const MySplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MySplashScreen2 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
                   image: DecorationImage(
-                    image: AssetImage("assets/images/image1.jpeg"),
+                    image: AssetImage("assets/images/image3.jpeg"),
                     fit: BoxFit.cover,
                   ),
             ),
@@ -28,7 +28,7 @@ class MySplashScreen2 extends StatelessWidget {
 
               // 🔹 Judul
               const Text(
-                "Welcome 2",
+                "Welcome 3",
                 style: TextStyle(
                   fontSize: 32.0,
                   color: Colors.black,
@@ -73,7 +73,7 @@ class MySplashScreen2 extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFF84a98c), // non-aktif
+                      color: Color(0xFFedede9), // non-aktif
                     ),
                   ),
                   Container(
@@ -82,7 +82,7 @@ class MySplashScreen2 extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFF84a98c), // non-aktif
                     ),
                   ),
                 ],
@@ -105,9 +105,14 @@ class MySplashScreen2 extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: (contex) => MySplashScreen3()),
-                      );
+                    // ✅ Pindah ke halaman login dan hapus semua route sebelumnya
+                      // Navigator.pushAndRemoveUntil(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const LoginScreen(),
+                      //   ),
+                      //   (Route<dynamic> route) => false,
+                      // );  
                     },
                     child: const Text(
                       "Continue",
