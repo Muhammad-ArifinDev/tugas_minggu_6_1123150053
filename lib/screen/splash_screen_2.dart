@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_week_6_1123150053/screen/splash_screen_2.dart';
+//import 'package:tugas_week_6_1123150053/screen/splash_screen_3.dart';
 
-class MySplashScreen extends StatelessWidget {
-  const MySplashScreen({super.key});
+class MySplashScreen2 extends StatelessWidget {
+  const MySplashScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MySplashScreen extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
                   image: DecorationImage(
-                    image: AssetImage("assets/images/bonaparte.jpg"),
+                    image: AssetImage("assets/images/image1.jpeg"),
                     fit: BoxFit.cover,
                   ),
             ),
@@ -28,7 +28,7 @@ class MySplashScreen extends StatelessWidget {
 
               // 🔹 Judul
               const Text(
-                "Welcome",
+                "Welcome 2",
                 style: TextStyle(
                   fontSize: 32.0,
                   color: Colors.black,
@@ -64,7 +64,7 @@ class MySplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFF84a98c), // aktif
+                      color: Color(0xFFedede9), // aktif
                     ),
                   ),
                   Container(
@@ -73,7 +73,7 @@ class MySplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFF84a98c), // non-aktif
                     ),
                   ),
                   Container(
@@ -105,9 +105,9 @@ class MySplashScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: (contex) => MySplashScreen2()),
-                      );
+                      // Navigator.push(context,
+                      // MaterialPageRoute(builder: (contex) => MySplashScreen3()),
+                      // );
                     },
                     child: const Text(
                       "Continue",
